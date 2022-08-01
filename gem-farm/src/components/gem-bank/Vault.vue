@@ -334,6 +334,6 @@ export default defineComponent({
   z-index: 10;
 }
 .vault, .wallet{
-  height: 200px;
+  min-height: 200px;
 }
 </style>
