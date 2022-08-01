@@ -1,0 +1,9 @@
+node_modules
+./gem-farm/node_modules
+./gem-bank/node_modules
+./gem-farm/dist
+./gem-bank/dist
+dist
+node_modules
+.env
+.vscode
