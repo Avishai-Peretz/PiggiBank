@@ -35,6 +35,7 @@ width: 100vw !important;
 .container-1 {  
   margin-top: 10px;
   display: grid;
+  width: 90vw;
   grid-template-columns: 30px 2.9fr 30px;
   grid-template-rows: 30px 2fr 30px;
   gap: 0px 0px;
@@ -44,8 +45,16 @@ width: 100vw !important;
     "l-c center r-c"
     "l-b bottom r-b";
 }
+.container-2-3-4{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   .container-2 {  
     margin-top: 10px;
+    align-self: center;
+    width: 90vw;
     display: grid;
     grid-template-columns: 30px 2.9fr 30px;
     grid-template-rows: 30px 2.5fr 30px;
@@ -69,10 +78,20 @@ width: 100vw !important;
       "l-c center r-c"
       "l-b bottom r-b";
   }
+  .body-container{
+    margin: 0;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .footer {
   justify-content: center;
   }
-
+  .p-10{
+    padding: 0 !important;
+  }
 
 .r-c { 
   grid-area: r-c;
@@ -119,7 +138,7 @@ background: url(./boxes/topright.png) center center/cover no-repeat;
 <template >
   <ConfigPane />
   <div v-if="!wallet" class="text-center">Please connect your wallet to continue</div>
-  <div v-else>
+  <div class="body-container" v-else>
     <!--farm address-->
     <div class="container-1">
       <div class="r-c"></div>
@@ -143,7 +162,7 @@ background: url(./boxes/topright.png) center center/cover no-repeat;
         </div>
       </div>
     </div>
-    <div v-if="farmerAcc">
+    <div v-if="farmerAcc" class="container-2-3-4">
     <div class="container-2">
       <div class="r-c"></div>
       <div class="l-c"></div>

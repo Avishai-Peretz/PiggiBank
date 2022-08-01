@@ -15,7 +15,7 @@
   </div>
 
   <!--wallet + vault view-->
-  <div class="flex items-stretch footer">
+  <div class="flex items-stretch footer nft-container">
     <!--left-->
      <div class="container-3">
       <div class="r-c"></div>
@@ -333,7 +333,16 @@ export default defineComponent({
   opacity: 0.7;
   z-index: 10;
 }
+.nft-container {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 95vw;
+}
 .vault, .wallet{
   min-height: 200px;
+
 }
 </style>

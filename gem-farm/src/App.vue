@@ -32,6 +32,7 @@ export default {
 <style>
 * {
   font-family: 'Press Start 2P', monospace;
+  margin: 0;
 }
 input[type='radio']:checked + span {
   @apply text-black;
@@ -41,6 +42,12 @@ input[type='radio']:checked + span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.start-container{
+  width: 100vw !important;
+  margin: 0 !important;
+}
+#app {
   width: 100vw !important;
 }
 
