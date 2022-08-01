@@ -1,7 +1,7 @@
 <template>
   <div class="footer pt-1 pb-1">
     <p class="px-3">Built by</p>
-    <img src="../../assets/ninjapig.png" height="32" width="30" />
+    <img src="../../assets/ninjapig.png" />
     <p class="px-3">
       <a
         class="nes-text is-primary"
@@ -18,7 +18,7 @@
       >
       | www.plutopigs.xyz
     </p>
-    <img src="../../assets/pp_logo.png" height="32" width="32" />
+    <img src="../../assets/pp_logo.png" />
   </div>
 </template>
 
@@ -31,6 +31,6 @@ export default {};
   @apply w-full flex justify-center align-middle bg-gray-200 text-center;
   position: absolute;
   bottom: 0px;
-  height: 40px;
+  height:  5.5vh;
 }
 </style>
